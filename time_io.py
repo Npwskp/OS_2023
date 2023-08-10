@@ -5,8 +5,9 @@ devnull = open(os.devnull, "w")
 
 def program_with_no_io():
     start = time.time()
+    x = 0
     for i in range(int(1e6)):
-        pass
+        x = x+1
     end = time.time()
 
     return end-start
